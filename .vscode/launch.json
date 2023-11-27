@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/murataitov/VisualStudioCodeProjects/github_rep/monopoly-game",
+      "program": "/Users/murataitov/VisualStudioCodeProjects/github_rep/monopoly-game/build/Debug/outDebug"
+    }
+  ]
+}

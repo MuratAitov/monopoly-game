@@ -213,12 +213,18 @@ friend class Game;
             Description = description;
             Effect = effect;
         }
+        bool operator==(const Card& other) const {
+            return ID == other.ID; 
+        } 
     };  
     vector<Card> chanceDeck;
     vector<Card> chestDeck; 
     vector<Card> chanceDeck2;
     vector<Card> chestDeck2; 
 public: 
+
+    
+
     Card getCardById(int id) {
         for (const Card& card : chanceDeck) {
             if (card.ID == id) {
@@ -491,12 +497,13 @@ public:
         this->cards.push_back(card); 
     } 
 
-    // void useCard(Cards::Card& card, vector<Cards::Card>& mycards){
-    //     auto it = find(mycards.begin(), mycards.end(), card); 
-    //     if(it != mycards.end()){
-    //         mycards.erase(it); 
-    //     }
-    // }
+    void useCard(Cards::Card& card, vector<Cards::Card>& mycards){
+        auto it = find(mycards.begin(), mycards.end(), card); 
+        if(it != mycards.end()){
+            mycards.erase(it); 
+        }
+    }
+    
 
     bool declareBankruptcy(){ 
         if (this->money <= 0){
@@ -505,68 +512,7 @@ public:
         else return false; 
     }
 
-    // void tradeProperty(Player& otherPlayer,vector<Board::FieldData*> anotherProperties, vector<Board::FieldData*> myProperties, int inAmount){
-    //     int count =0; 
-    //     for(int i =0; properties.size(); i++){
-    //         if (properties[i] == myProperty){ 
-    //             count++;
-    //         }
-    //     }
-    //     properties.erase(count);
-    //     this->money += inAmount;
-    //     otherPlayer.properties.push_back(myProperty);
-    // }
-
-
-
-
-
-
-//     void Player::tradeProperty(Player& otherPlayer, 
-//                            vector<Board::FieldData*> myOfferedProperties, 
-//                            vector<Board::FieldData*> theirOfferedProperties, 
-//                            int myOfferedMoney, 
-//                            int theirOfferedMoney) {
-//     // Проверки, как в вашем текущем методе ...
-
-//     // Обмен свойствами и деньгами
-//     for (auto& prop : myOfferedProperties) {
-//         auto it = find(properties.begin(), properties.end(), prop);
-//         properties.erase(it);
-//         otherPlayer.properties.push_back(prop);
-//         prop->Owner = &otherPlayer;
-
-//         // Обновление map для текущего игрока
-//         propertiesByTypeAndColor[prop->Type][prop->Color].erase(
-//             remove(propertiesByTypeAndColor[prop->Type][prop->Color].begin(), 
-//                    propertiesByTypeAndColor[prop->Type][prop->Color].end(), 
-//                    prop), 
-//             propertiesByTypeAndColor[prop->Type][prop->Color].end());
-
-//         // Добавление свойства в map другого игрока
-//         otherPlayer.propertiesByTypeAndColor[prop->Type][prop->Color].push_back(prop);
-//     }
-
-//     for (auto& prop : theirOfferedProperties) {
-//         auto it = find(otherPlayer.properties.begin(), otherPlayer.properties.end(), prop);
-//         otherPlayer.properties.erase(it);
-//         this->properties.push_back(prop);
-//         prop->Owner = this;
-
-//         // Обновление map для другого игрока
-//         otherPlayer.propertiesByTypeAndColor[prop->Type][prop->Color].erase(
-//             remove(otherPlayer.propertiesByTypeAndColor[prop->Type][prop->Color].begin(), 
-//                    otherPlayer.propertiesByTypeAndColor[prop->Type][prop->Color].end(), 
-//                    prop), 
-//             otherPlayer.propertiesByTypeAndColor[prop->Type][prop->Color].end());
-
-//         // Добавление свойства в map текущего игрока
-//         propertiesByTypeAndColor[prop->Type][prop->Color].push_back(prop);
-//     }
-
-//     // Обмен деньгами, как в вашем текущем методе ...
-// }
-
+   
 
 };
 
