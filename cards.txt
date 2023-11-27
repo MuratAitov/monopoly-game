@@ -1,0 +1,190 @@
+Card ID: 1
+Tag: ADVGO
+Type: Chance
+Category: move
+Name: Advance to Go
+Description: Collect $200.
+Effect: 0
+-----------------------
+Card ID: 2
+Tag: ADVIA
+Type: Chance
+Category: move
+Name: Advance to Illinois Ave.
+Description: If you pass Go - collect $200.
+Effect: 24
+-----------------------
+Card ID: 3
+Tag: ADVSC
+Type: Chance
+Category: move
+Name: Advance to St. Charles Place
+Description: If you pass Go - collect $200.
+Effect: 11
+-----------------------
+Card ID: 4
+Tag: ADVNU
+Type: Chance
+Category: move_utility
+Name: Advance to nearest Utility
+Description: If Utility is unowned, you may buy it from the Bank. If owned, throw dice and pay owner a total ten times the amount thrown.
+Effect: 10
+-----------------------
+Card ID: 5
+Tag: ADVNR
+Type: Chance
+Category: move_rr
+Name: Advance to nearest Railroad
+Description: If Railroad is unowned, you may buy it from the Bank. If owned, pay owner twice the rental to which he/she is otherwise entitled. 
+Effect: 2
+-----------------------
+Card ID: 6
+Tag: ADVNR
+Type: Chance
+Category: move_rr
+Name: Advance to nearest Railroad
+Description: If Railroad is unowned, you may buy it from the Bank. If owned, pay owner twice the rental to which he/she is otherwise entitled. 
+Effect: 2
+-----------------------
+Card ID: 7
+Tag: BANKD
+Type: Chance
+Category: money
+Name: Bank pays you dividend of $50
+Description: You gain $50.
+Effect: 50
+-----------------------
+Card ID: 8
+Tag: GETJF
+Type: Chance
+Category: item
+Name: Get out of Jail Free
+Description: This card may be kept until needed, or traded/sold.
+Effect: 0
+-----------------------
+Card ID: 9
+Tag: GOBTS
+Type: Chance
+Category: move_abs
+Name: Go Back 3 Spaces
+Description: You move back 3 spaces.
+Effect: -3
+-----------------------
+Card ID: 10
+Tag: GOTOJ
+Type: Chance
+Category: move_jail
+Name: Go to Jail
+Description: Do not pass Go, do not collect $200.
+Effect: 10
+-----------------------
+Card ID: 11
+Tag: GENRP
+Type: Chance
+Category: money_houses
+Name: Make General Repairs
+Description: For each house you own, you pay $25 - For each hotel, $100 .
+Effect: 0
+-----------------------
+Card ID: 12
+Tag: POORT
+Type: Chance
+Category: money
+Name: Pay poor tax of $15
+Description: Pay $15.
+Effect: -15
+-----------------------
+Card ID: 13
+Tag: ADVRR
+Type: Chance
+Category: move
+Name: Take a trip to Reading Railroad
+Description: If you pass Go - collect $200.
+Effect: 5
+-----------------------
+Card ID: 14
+Tag: ADVBW
+Type: Chance
+Category: move
+Name: Take a walk on the Boardwalk
+Description: Advance token to Boardwalk.
+Effect: 39
+-----------------------
+Card ID: 15
+Tag: CHBRD
+Type: Chance
+Category: money_players
+Name: You have been elected Chairman of the Board
+Description: Pay each player $50.
+Effect: -50
+-----------------------
+Card ID: 16
+Tag: BALMT
+Type: Chance
+Category: money
+Name: Your building and loan matures
+Description: Collect $150.
+Effect: 150
+-----------------------
+Card ID: 17
+Tag: CROSS
+Type: Chance
+Category: money
+Name: You have won a crossword competition
+Description: Collect $100.
+Effect: 100
+-----------------------
+Card ID: 18
+Tag: ADVGO
+Type: Community Chest
+Category: move
+Name: Advance to Go
+Description: Collect $200.
+Effect: 0
+-----------------------
+Card ID: 19
+Tag: BANKE
+Type: Community Chest
+Category: money
+Name: Bank error in your favor
+Description: Collect $200.
+Effect: 200
+-----------------------
+Card ID: 20
+Tag: DOCTF
+Type: Community Chest
+Category: money
+Name: Doctor's Fees
+Description: Pay $50.
+Effect: -50
+-----------------------
+Card ID: 21
+Tag: SALES
+Type: Community Chest
+Category: money
+Name: From sale of stock you get $50
+Description: Collect $50.
+Effect: 50
+-----------------------
+Card ID: 22
+Tag: GETJF
+Type: Community Chest
+Category: item
+Name: Get out of Jail Free
+Description: This card may be kept until needed, or traded/sold.
+Effect: 0
+-----------------------
+Card ID: 23
+Tag: GOTOJ
+Type: Community Chest
+Category: move_jail
+Name: Go to Jail
+Description: Do not pass Go, do not collect $200.
+Effect: 10
+-----------------------
+Card ID: 24
+Tag: GRDON
+Type: Community Chest
+Category: money_players
+Name: Grand Opera Night
+Description: Collect $50 f

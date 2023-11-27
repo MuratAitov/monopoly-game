@@ -1,0 +1,600 @@
+----------------------------------------
+Go
+Type: Go
+Color: None
+Position: 0
+Price: $0
+Price to Build: $0
+Rent: $0
+Rent with 1 House: $0
+Rent with 2 Houses: $0
+Rent with 3 Houses: $0
+Rent with 4 Houses: $0
+Rent with Hotel: $0
+Number: 0
+----------------------------------------
+----------------------------------------
+Mediterranean Avenue
+Type: Street
+Color: Brown
+Position: 1
+Price: $60
+Price to Build: $50
+Rent: $2
+Rent with 1 House: $10
+Rent with 2 Houses: $30
+Rent with 3 Houses: $90
+Rent with 4 Houses: $160
+Rent with Hotel: $250
+Number: 0
+----------------------------------------
+----------------------------------------
+Community Chest
+Type: Chest
+Color: None
+Position: 2
+Price: $0
+Price to Build: $0
+Rent: $0
+Rent with 1 House: $0
+Rent with 2 Houses: $0
+Rent with 3 Houses: $0
+Rent with 4 Houses: $0
+Rent with Hotel: $0
+Number: 0
+----------------------------------------
+----------------------------------------
+Baltic Avenue
+Type: Street
+Color: Brown
+Position: 3
+Price: $60
+Price to Build: $50
+Rent: $4
+Rent with 1 House: $20
+Rent with 2 Houses: $60
+Rent with 3 Houses: $180
+Rent with 4 Houses: $320
+Rent with Hotel: $450
+Number: 0
+----------------------------------------
+----------------------------------------
+Income Tax
+Type: Tax
+Color: None
+Position: 4
+Price: $200
+Price to Build: $0
+Rent: $200
+Rent with 1 House: $0
+Rent with 2 Houses: $0
+Rent with 3 Houses: $0
+Rent with 4 Houses: $0
+Rent with Hotel: $0
+Number: 0
+----------------------------------------
+----------------------------------------
+Reading Railroad
+Type: Railroad
+Color: None
+Position: 5
+Price: $200
+Price to Build: $0
+Rent: $25
+Rent with 1 House: $0
+Rent with 2 Houses: $0
+Rent with 3 Houses: $0
+Rent with 4 Houses: $0
+Rent with Hotel: $0
+Number: 0
+----------------------------------------
+----------------------------------------
+Oriental Avenue
+Type: Street
+Color: LightBlue
+Position: 6
+Price: $100
+Price to Build: $50
+Rent: $6
+Rent with 1 House: $30
+Rent with 2 Houses: $90
+Rent with 3 Houses: $270
+Rent with 4 Houses: $400
+Rent with Hotel: $550
+Number: 0
+----------------------------------------
+----------------------------------------
+Chance
+Type: Chance
+Color: None
+Position: 7
+Price: $0
+Price to Build: $0
+Rent: $0
+Rent with 1 House: $0
+Rent with 2 Houses: $0
+Rent with 3 Houses: $0
+Rent with 4 Houses: $0
+Rent with Hotel: $0
+Number: 0
+----------------------------------------
+----------------------------------------
+Vermont Avenue
+Type: Street
+Color: LightBlue
+Position: 8
+Price: $100
+Price to Build: $50
+Rent: $6
+Rent with 1 House: $30
+Rent with 2 Houses: $90
+Rent with 3 Houses: $270
+Rent with 4 Houses: $400
+Rent with Hotel: $550
+Number: 0
+----------------------------------------
+----------------------------------------
+Connecticut Avenue
+Type: Street
+Color: LightBlue
+Position: 9
+Price: $120
+Price to Build: $50
+Rent: $8
+Rent with 1 House: $40
+Rent with 2 Houses: $100
+Rent with 3 Houses: $300
+Rent with 4 Houses: $450
+Rent with Hotel: $600
+Number: 0
+----------------------------------------
+----------------------------------------
+Jail
+Type: Jail
+Color: None
+Position: 10
+Price: $0
+Price to Build: $0
+Rent: $0
+Rent with 1 House: $0
+Rent with 2 Houses: $0
+Rent with 3 Houses: $0
+Rent with 4 Houses: $0
+Rent with Hotel: $0
+Number: 0
+----------------------------------------
+----------------------------------------
+St. Charles Place
+Type: Street
+Color: Pink
+Position: 11
+Price: $140
+Price to Build: $100
+Rent: $10
+Rent with 1 House: $50
+Rent with 2 Houses: $150
+Rent with 3 Houses: $450
+Rent with 4 Houses: $625
+Rent with Hotel: $750
+Number: 0
+----------------------------------------
+----------------------------------------
+Electric Company
+Type: Utility
+Color: None
+Position: 12
+Price: $150
+Price to Build: $0
+Rent: $4
+Rent with 1 House: $0
+Rent with 2 Houses: $0
+Rent with 3 Houses: $0
+Rent with 4 Houses: $0
+Rent with Hotel: $0
+Number: 0
+----------------------------------------
+----------------------------------------
+States Avenue
+Type: Street
+Color: Pink
+Position: 13
+Price: $140
+Price to Build: $100
+Rent: $10
+Rent with 1 House: $50
+Rent with 2 Houses: $150
+Rent with 3 Houses: $450
+Rent with 4 Houses: $625
+Rent with Hotel: $750
+Number: 0
+----------------------------------------
+----------------------------------------
+Virginia Avenue
+Type: Street
+Color: Pink
+Position: 14
+Price: $160
+Price to Build: $100
+Rent: $12
+Rent with 1 House: $60
+Rent with 2 Houses: $180
+Rent with 3 Houses: $500
+Rent with 4 Houses: $700
+Rent with Hotel: $900
+Number: 0
+----------------------------------------
+----------------------------------------
+Pennsylvania Railroad
+Type: Railroad
+Color: None
+Position: 15
+Price: $200
+Price to Build: $0
+Rent: $25
+Rent with 1 House: $0
+Rent with 2 Houses: $0
+Rent with 3 Houses: $0
+Rent with 4 Houses: $0
+Rent with Hotel: $0
+Number: 0
+----------------------------------------
+----------------------------------------
+St. James Place
+Type: Street
+Color: Orange
+Position: 16
+Price: $180
+Price to Build: $100
+Rent: $14
+Rent with 1 House: $70
+Rent with 2 Houses: $200
+Rent with 3 Houses: $550
+Rent with 4 Houses: $750
+Rent with Hotel: $950
+Number: 0
+----------------------------------------
+----------------------------------------
+Community Chest
+Type: Chest
+Color: None
+Position: 17
+Price: $0
+Price to Build: $0
+Rent: $0
+Rent with 1 House: $0
+Rent with 2 Houses: $0
+Rent with 3 Houses: $0
+Rent with 4 Houses: $0
+Rent with Hotel: $0
+Number: 0
+----------------------------------------
+----------------------------------------
+Tennessee Avenue
+Type: Street
+Color: Orange
+Position: 18
+Price: $180
+Price to Build: $100
+Rent: $14
+Rent with 1 House: $70
+Rent with 2 Houses: $200
+Rent with 3 Houses: $550
+Rent with 4 Houses: $750
+Rent with Hotel: $950
+Number: 0
+----------------------------------------
+----------------------------------------
+New York Avenue
+Type: Street
+Color: Orange
+Position: 19
+Price: $200
+Price to Build: $100
+Rent: $16
+Rent with 1 House: $80
+Rent with 2 Houses: $220
+Rent with 3 Houses: $600
+Rent with 4 Houses: $800
+Rent with Hotel: $1000
+Number: 0
+----------------------------------------
+----------------------------------------
+Free Parking
+Type: Parking
+Color: None
+Position: 20
+Price: $0
+Price to Build: $0
+Rent: $0
+Rent with 1 House: $0
+Rent with 2 Houses: $0
+Rent with 3 Houses: $0
+Rent with 4 Houses: $0
+Rent with Hotel: $0
+Number: 0
+----------------------------------------
+----------------------------------------
+Kentucky Avenue
+Type: Street
+Color: Red
+Position: 21
+Price: $220
+Price to Build: $150
+Rent: $18
+Rent with 1 House: $90
+Rent with 2 Houses: $250
+Rent with 3 Houses: $700
+Rent with 4 Houses: $875
+Rent with Hotel: $1050
+Number: 0
+----------------------------------------
+----------------------------------------
+Chance
+Type: Chance
+Color: None
+Position: 22
+Price: $0
+Price to Build: $0
+Rent: $0
+Rent with 1 House: $0
+Rent with 2 Houses: $0
+Rent with 3 Houses: $0
+Rent with 4 Houses: $0
+Rent with Hotel: $0
+Number: 0
+----------------------------------------
+----------------------------------------
+Indiana Avenue
+Type: Street
+Color: Red
+Position: 23
+Price: $220
+Price to Build: $150
+Rent: $18
+Rent with 1 House: $90
+Rent with 2 Houses: $250
+Rent with 3 Houses: $700
+Rent with 4 Houses: $875
+Rent with Hotel: $1050
+Number: 0
+----------------------------------------
+----------------------------------------
+Illinois Avenue
+Type: Street
+Color: Red
+Position: 24
+Price: $240
+Price to Build: $150
+Rent: $20
+Rent with 1 House: $100
+Rent with 2 Houses: $300
+Rent with 3 Houses: $750
+Rent with 4 Houses: $925
+Rent with Hotel: $1100
+Number: 0
+----------------------------------------
+----------------------------------------
+B. & O. Railroad
+Type: Railroad
+Color: None
+Position: 25
+Price: $200
+Price to Build: $0
+Rent: $25
+Rent with 1 House: $0
+Rent with 2 Houses: $0
+Rent with 3 Houses: $0
+Rent with 4 Houses: $0
+Rent with Hotel: $0
+Number: 0
+----------------------------------------
+----------------------------------------
+Atlantic Avenue
+Type: Street
+Color: Yellow
+Position: 26
+Price: $260
+Price to Build: $150
+Rent: $22
+Rent with 1 House: $110
+Rent with 2 Houses: $330
+Rent with 3 Houses: $800
+Rent with 4 Houses: $975
+Rent with Hotel: $1150
+Number: 0
+----------------------------------------
+----------------------------------------
+Ventnor Avenue
+Type: Street
+Color: Yellow
+Position: 27
+Price: $260
+Price to Build: $150
+Rent: $22
+Rent with 1 House: $110
+Rent with 2 Houses: $330
+Rent with 3 Houses: $800
+Rent with 4 Houses: $975
+Rent with Hotel: $1150
+Number: 0
+----------------------------------------
+----------------------------------------
+Water Works
+Type: Utility
+Color: None
+Position: 28
+Price: $150
+Price to Build: $0
+Rent: $4
+Rent with 1 House: $0
+Rent with 2 Houses: $0
+Rent with 3 Houses: $0
+Rent with 4 Houses: $0
+Rent with Hotel: $0
+Number: 0
+----------------------------------------
+----------------------------------------
+Marvin Gardens
+Type: Street
+Color: Yellow
+Position: 29
+Price: $280
+Price to Build: $150
+Rent: $24
+Rent with 1 House: $120
+Rent with 2 Houses: $360
+Rent with 3 Houses: $850
+Rent with 4 Houses: $1025
+Rent with Hotel: $1200
+Number: 0
+----------------------------------------
+----------------------------------------
+Go To Jail
+Type: GoToJail
+Color: None
+Position: 30
+Price: $0
+Price to Build: $0
+Rent: $0
+Rent with 1 House: $0
+Rent with 2 Houses: $0
+Rent with 3 Houses: $0
+Rent with 4 Houses: $0
+Rent with Hotel: $0
+Number: 0
+----------------------------------------
+----------------------------------------
+Pacific Avenue
+Type: Street
+Color: Green
+Position: 31
+Price: $300
+Price to Build: $200
+Rent: $26
+Rent with 1 House: $130
+Rent with 2 Houses: $390
+Rent with 3 Houses: $900
+Rent with 4 Houses: $1100
+Rent with Hotel: $1275
+Number: 0
+----------------------------------------
+----------------------------------------
+North Carolina Avenue
+Type: Street
+Color: Green
+Position: 32
+Price: $300
+Price to Build: $200
+Rent: $26
+Rent with 1 House: $130
+Rent with 2 Houses: $390
+Rent with 3 Houses: $900
+Rent with 4 Houses: $1100
+Rent with Hotel: $1275
+Number: 0
+----------------------------------------
+----------------------------------------
+Community Chest
+Type: Chest
+Color: None
+Position: 33
+Price: $0
+Price to Build: $0
+Rent: $0
+Rent with 1 House: $0
+Rent with 2 Houses: $0
+Rent with 3 Houses: $0
+Rent with 4 Houses: $0
+Rent with Hotel: $0
+Number: 0
+----------------------------------------
+----------------------------------------
+Pennsylvania Avenue
+Type: Street
+Color: Green
+Position: 34
+Price: $320
+Price to Build: $200
+Rent: $28
+Rent with 1 House: $150
+Rent with 2 Houses: $450
+Rent with 3 Houses: $1000
+Rent with 4 Houses: $1200
+Rent with Hotel: $1400
+Number: 0
+----------------------------------------
+----------------------------------------
+Short Line
+Type: Railroad
+Color: None
+Position: 35
+Price: $200
+Price to Build: $0
+Rent: $25
+Rent with 1 House: $0
+Rent with 2 Houses: $0
+Rent with 3 Houses: $0
+Rent with 4 Houses: $0
+Rent with Hotel: $0
+Number: 0
+----------------------------------------
+----------------------------------------
+Chance
+Type: Chance
+Color: None
+Position: 36
+Price: $0
+Price to Build: $0
+Rent: $0
+Rent with 1 House: $0
+Rent with 2 Houses: $0
+Rent with 3 Houses: $0
+Rent with 4 Houses: $0
+Rent with Hotel: $0
+Number: 0
+----------------------------------------
+----------------------------------------
+Park Place
+Type: Street
+Color: Blue
+Position: 37
+Price: $350
+Price to Build: $200
+Rent: $35
+Rent with 1 House: $175
+Rent with 2 Houses: $500
+Rent with 3 Houses: $1100
+Rent with 4 Houses: $1300
+Rent with Hotel: $1500
+Number: 0
+----------------------------------------
+----------------------------------------
+Luxury Tax
+Type: Tax
+Color: None
+Position: 38
+Price: $100
+Price to Build: $0
+Rent: $75
+Rent with 1 House: $0
+Rent with 2 Houses: $0
+Rent with 3 Houses: $0
+Rent with 4 Houses: $0
+Rent with Hotel: $0
+Number: 0
+----------------------------------------
+----------------------------------------
+Boardwalk
+Type: Street
+Color: Blue
+Position: 39
+Price: $400
+Price to Build: $200
+Rent: $50
+Rent with 1 House: $200
+Rent with 2 Houses: $600
+Rent with 3 Houses: $1400
+Rent with 4 Houses: $1700
+Rent with Hotel: $2000
+Number: 0
+----------------------------------------
