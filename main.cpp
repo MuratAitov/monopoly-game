@@ -136,11 +136,11 @@ public:
                 }
             }
             else if(field->Type == "Chance"){
-                outfile << "You are on a chance card field, get one" << endl; 
+                outfile << "You are on a chance card field, get one card" << endl<< endl; 
                 outfile << "Postion: " << field->Position << endl;
             }
             else if(field->Type == "Chest"){
-                outfile << "You are on a chance card field, get one" << endl;  
+                outfile << "You are on a chance card field, get one card" << endl << endl;  
                 outfile << "Postion: " << field->Position << endl;
             }
             else if(field->Type == "Railroad"){ 
@@ -156,7 +156,7 @@ public:
                 outfile << "Postion: " << field->Position << endl;
             }
             else if(field->Type == "Jail"){
-                outfile << "Free visit to jail, do noyhing." << endl; 
+                outfile << "Free visit to jail, do nothing." << endl; 
                 outfile << "Postion: " << field->Position << endl;
             }
             else if(field->Type == "GoToJail"){
@@ -204,6 +204,11 @@ friend class Game;
         string Name; 
         string Description;
         int Effect;
+
+        Card(){
+
+        }
+
         Card(int id, string tag, string type, string category, string name, string description, int effect){
             ID = id; 
             Tag = tag; 
@@ -213,15 +218,18 @@ friend class Game;
             Description = description;
             Effect = effect;
         }
+
         bool operator==(const Card& other) const {
             return ID == other.ID; 
         } 
     };  
+
+public: 
     vector<Card> chanceDeck;
     vector<Card> chestDeck; 
     vector<Card> chanceDeck2;
     vector<Card> chestDeck2; 
-public: 
+
 
     
 
@@ -461,8 +469,8 @@ public:
         money += amount;
     }
 
-    void payRent(Player& owner) {
-        if (position != nullptr && position->Owner == &owner) {
+    void payRent() {
+        if (position != nullptr) {
             int rentAmount = 0;
             switch (position->Number) {
                 case 0:
@@ -489,12 +497,14 @@ public:
             }
 
             this->money -= rentAmount;
-            owner.money += rentAmount;
+            position->Owner->money += rentAmount;
         }
     }   
     void getCard (vector<Cards::Card>& deck, vector<Cards::Card>& discardedDeck, Cards::Card card, Cards cards) {
         cards.takeUserCard(deck, discardedDeck); 
+        if(card.Description == "This card may be kept until needed, or traded/sold."){
         this->cards.push_back(card); 
+        }
     } 
 
     void useCard(Cards::Card& card, vector<Cards::Card>& mycards){
@@ -520,16 +530,14 @@ public:
 
 
 class Game{ 
-protected:
 
 public: 
     Board board; 
     Cards cards;
 
     Game(){ 
+       
     }
-
-   
 
     vector <Player> startOfGame(Board& board) const{
         vector <Player> players; 
@@ -549,12 +557,12 @@ public:
         }
         auto rng = default_random_engine(chrono::system_clock::now().time_since_epoch().count());
         shuffle(begin(players), end(players), rng);
-        cout << "Let's start a game" << endl ; 
+        cout << "Let's start a game" << endl << endl ; 
         return players; 
     }
     void mainGame(Board& board, Cards& card, vector<Player>& players){ 
         for (int i = 0; i < players.size(); i++ ){ 
-            bool diceRolled = false;
+            bool diceRolled = false; 
             bool ready = false; 
             int action = 0;
 
@@ -563,56 +571,19 @@ public:
                     loose(i, players); 
                 }
                 else { 
-                    cout << players[i].nameOfPlayer << " , your turn" << endl; 
+                    cout << players[i].nameOfPlayer << ", your turn" << endl << endl; 
                     cout << "Options to do(give just a number of an action): " << endl << "1) View my Card." << endl << "2) Roll dice" << endl; 
                     cout << "9) Pass to the next person" << endl<< endl; 
                     cin >> action; 
+                    cout << endl; 
                     switch (action)
                     {
                     case 1:
                         players[i].displayPlayerCard(); 
                         break;
                     case 2: 
-                        while (!diceRolled){
-                            int a = 0; 
-                            int b = 0; 
-                            a = players[i].rollDice();
-                            b = players[i].rollDice();  
-
-                            cout << "Dice №1 is " << a << ". Dice №2 is " << b << endl; 
-
-                            if (a == b){ 
-                                cout << "You got same number on dices. That means you have to roll them again" <<endl; 
-                            }
-                            else { 
-                                diceRolled = true; 
-                            }
-                            players[i].move(players[i].position, a+b);
-                            // cout << players[i].position->Name << " " << players[i].position->Type<< endl ; 
-
-                            board.displayFieldGame(cout, players[i].position);
-                            if(players[i].position->Owner == nullptr){ 
-                                cout<< "Do u want to buy? (y/n)" << endl; 
-                                bool validChoice = false; 
-                                string answer = "";
-                                cin >> answer; 
-                                while (!validChoice) {
-                                    if (answer == "y" || answer == "n") {
-                                        validChoice = true;
-                                    } 
-                                    else {
-                                        cout << "You entered an invalid character. Please enter 'y' or 'n'." << endl;
-                                    }
-                                }
-                                if (answer == "y"){
-                                        players[i].buyProperty();
-                                    }
-                                else{
-                                    return;
-                                }
-                                
-                            }
-                        }
+                        
+                        diceRolled = secondCase(players, i, diceRolled); 
                         break; 
                     case 9: 
                         ready =true; 
@@ -622,6 +593,73 @@ public:
             }
         }
     }
+    
+    bool secondCase(vector<Player>& players, int i, bool diceRolled){ 
+
+        while (!diceRolled){
+            int a = 7; 
+            int b = 0; 
+            //a = players[i].rollDice();
+            //b = players[i].rollDice();  
+
+            cout << "Dice №1 is " << a << ". Dice №2 is " << b << endl; 
+
+            if (a == b){ 
+                cout << "You got same number on dices. That means you have to roll them again" <<endl; 
+            }
+            else { 
+                diceRolled = true; 
+            }
+
+            players[i].move(players[i].position, a+b);
+            board.displayFieldGame(cout, players[i].position);
+
+
+            if (players[i].position->Type== "Street" or players[i].position->Type == "Railroad" or players[i].position->Type == "Utility"){
+                if(players[i].position->Owner == nullptr){ 
+                    cout<< "Do u want to buy? (y/n)" << endl; 
+                    bool validChoice = false; 
+                    string answer = "";
+                    cin >> answer; 
+                    while (!validChoice) {
+                        if (answer == "y" || answer == "n") {
+                            validChoice = true;
+                        } 
+                        else {
+                            cout << "You entered an invalid character. Please enter 'y' or 'n'." << endl;
+                        }
+                    }
+                    if (answer == "y"){
+                            players[i].buyProperty();
+                        }
+                    else{
+                        return diceRolled;
+                    }
+                    
+                }
+                else{ 
+                    players[i].payRent();
+                }
+                //mainMenu()
+            }
+            else if(players[i].position->Type == "Chest" or players[i].position->Type == "Chance"){ 
+                Cards::Card card;
+                if (players[i].position->Type == "Chance"){
+                    card= cards.takeUserCard(cards.chanceDeck, cards.chanceDeck2);
+                    players[i].getCard(cards.chanceDeck, cards.chanceDeck2,card, cards);
+                }
+                
+                else{
+                    card = cards.takeUserCard(cards.chestDeck, cards.chestDeck2);
+                    players[i].getCard(cards.chestDeck, cards.chestDeck2, cards.takeUserCard(cards.chestDeck, cards.chestDeck2), cards);
+                }
+                cards.displayCard(cout, card);
+               
+            }
+        }   
+        return diceRolled;
+    }
+
     void loose(int i, vector<Player>& players) {
         cout << "You don't have enough money to play. " << endl; 
             if (players[i].properties.size() == 0){ 
