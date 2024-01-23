@@ -187,4 +187,86 @@ Tag: GRDON
 Type: Community Chest
 Category: money_players
 Name: Grand Opera Night
-Description: Collect $50 f
+Description: Collect $50 from every player for opening night seats.
+Effect: 50
+-----------------------
+Card ID: 25
+Tag: HOLFM
+Type: Community Chest
+Category: money
+Name: Holiday Fund matures
+Description: Receive $100.
+Effect: 100
+-----------------------
+Card ID: 26
+Tag: INCTR
+Type: Community Chest
+Category: money
+Name: Income Tax Refund
+Description: Collect $20.
+Effect: 20
+-----------------------
+Card ID: 27
+Tag: YBDAY
+Type: Community Chest
+Category: money_players
+Name: It is your Birthday
+Description: Collect $10 from each player.
+Effect: 10
+-----------------------
+Card ID: 28
+Tag: LINSM
+Type: Community Chest
+Category: money
+Name: Life Insurance Matures
+Description: Collect $100.
+Effect: 100
+-----------------------
+Card ID: 29
+Tag: HOSPF
+Type: Community Chest
+Category: money
+Name: Pay hospital fees of $100
+Description: Pay $100.
+Effect: -100
+-----------------------
+Card ID: 30
+Tag: SCHLF
+Type: Community Chest
+Category: money
+Name: Pay school fees of $150
+Description: Pay $150.
+Effect: -150
+-----------------------
+Card ID: 31
+Tag: CONSF
+Type: Community Chest
+Category: money
+Name: Receive $25 consultancy fee
+Description: Collect $25
+Effect: 25
+-----------------------
+Card ID: 32
+Tag: STRRP
+Type: Community Chest
+Category: money_houses
+Name: Assessed for street repairs
+Description: You are assessed for street repairs - $40 per house - $115 per hotel.
+Effect: 0
+-----------------------
+Card ID: 33
+Tag: BEUTP
+Type: Community Chest
+Category: money
+Name: You have won second prize in a beauty contest
+Description: Collect $10
+Effect: 10
+-----------------------
+Card ID: 34
+Tag: INHRT
+Type: Community Chest
+Category: money
+Name: You inherit $100
+Description: Collect $100
+Effect: 100
+-----------------------

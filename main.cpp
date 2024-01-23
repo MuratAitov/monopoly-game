@@ -522,6 +522,34 @@ public:
         else return false; 
     }
 
+    void tradeProperty(Player& otherPlayer, vector<Board::FieldData*> myProperties, vector<Board::FieldData*> theirProperties, int myMoney, int theirMoney) {
+ 
+    for (auto& property : myProperties) {
+        auto it = find(properties.begin(), properties.end(), property);
+        if (it != properties.end()) {
+            properties.erase(it);
+            otherPlayer.properties.push_back(property);
+            property->Owner = &otherPlayer;
+        }
+    }
+
+ 
+    for (auto& property : theirProperties) {
+        auto it = find(otherPlayer.properties.begin(), otherPlayer.properties.end(), property);
+        if (it != otherPlayer.properties.end()) {
+            otherPlayer.properties.erase(it);
+            properties.push_back(property);
+            property->Owner = this;
+        }
+    }
+
+    
+    this->money -= myMoney;
+    otherPlayer.money += myMoney;
+
+    otherPlayer.money -= theirMoney;
+    this->money += theirMoney;
+}
    
 
 };
@@ -560,6 +588,7 @@ public:
         cout << "Let's start a game" << endl << endl ; 
         return players; 
     }
+
     void mainGame(Board& board, Cards& card, vector<Player>& players){ 
         for (int i = 0; i < players.size(); i++ ){ 
             bool diceRolled = false; 
@@ -573,7 +602,7 @@ public:
                 else { 
                     cout << players[i].nameOfPlayer << ", your turn" << endl << endl; 
                     cout << "Options to do(give just a number of an action): " << endl << "1) View my Card." << endl << "2) Roll dice" << endl; 
-                    cout << "9) Pass to the next person" << endl<< endl; 
+                    cout << "3) Start negotioation" << endl << "9) Pass to the next person" << endl<< endl; 
                     cin >> action; 
                     cout << endl; 
                     switch (action)
@@ -582,9 +611,10 @@ public:
                         players[i].displayPlayerCard(); 
                         break;
                     case 2: 
-                        
                         diceRolled = secondCase(players, i, diceRolled); 
                         break; 
+                    case 3: 
+                        thirdcase(players, i); 
                     case 9: 
                         ready =true; 
                         break;
@@ -597,14 +627,16 @@ public:
     bool secondCase(vector<Player>& players, int i, bool diceRolled){ 
 
         while (!diceRolled){
-            int a = 7; 
-            int b = 0; 
-            //a = players[i].rollDice();
-            //b = players[i].rollDice();  
+            // int a = 7; 
+            // int b = 0; 
+            bool rollagain = false; 
+            int a = players[i].rollDice();
+            int b = players[i].rollDice();  
 
             cout << "Dice №1 is " << a << ". Dice №2 is " << b << endl; 
 
             if (a == b){ 
+                rollagain = true; 
                 cout << "You got same number on dices. That means you have to roll them again" <<endl; 
             }
             else { 
@@ -658,6 +690,29 @@ public:
             }
         }   
         return diceRolled;
+    }
+
+    void thirdcase(vector<Player>& players, int i){ 
+        int number;
+        int answer;
+        int  tradein; 
+        int tradeout;
+        cout << "Choose a player you want to negotiate with." << endl;
+        for (Player p : players){ 
+            int k = 0; 
+            cout << k<< ") "<<  p.nameOfPlayer << endl;
+            ++k; 
+        } 
+        cin >> number; 
+
+        cout << "What do you want to get from a player" << endl << "1) Property" << endl << "2) Money" << endl;
+        cin >> answer; 
+        switch(answer){ 
+            case 1: 
+                cout << "These are properties player has: " << endl; 
+                players[number].displayProperties(); 
+                
+        }
     }
 
     void loose(int i, vector<Player>& players) {
